@@ -10,7 +10,7 @@
 <article class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	<div class="post__meta">
-		<p>Published: <?php the_time(get_option('date_format')." в ".get_option('time_format')); ?></p>
+		<p>Published: <?php the_time(get_option('date_format')." in ".get_option('time_format')); ?></p>
 		<p>Author:  <?php the_author_posts_link(); ?></p>
 		<p>Categories: <?php the_category(',') ?></p>
 		<?php the_tags('<p>Tags: ', ',', '</p>'); ?>

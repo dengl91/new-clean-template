@@ -1,0 +1,84 @@
+/*   
+Theme Name: New clean template
+Version: 3.4
+Tags: clean, development, HTML, Sass, JavaScript
+Description: Clean wordpress theme
+Author: DHL
+Author URI: telegram @dhljob
+*/
+
+:root {
+    --container: 1200px;
+    --font__family: 'Lato', sans-serif;
+    --font__size: 16px;
+    --line-height: 1.5;
+    --text__color: #1C2644;
+    --gray: #727D88;
+    --size: 16px;
+    --main: #55BC7E;
+    --main__hover: #318251;
+    --h1__size: 40px;
+    --h2__size: 32px;
+    --h3__size: 24px;
+    --h4__size: 18px;
+    --h5__size: 16px;
+    --stroke: #EDEFF1;
+    --stroke--light: #464952;
+    --status--red: #F84747;
+    --status--green: #41C284;
+    --status--blue: #70B9EE;
+    --placeholder: #9090A3;
+    --telegram: #009DEC;
+    --whatsapp: #25D366;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: var(--font__family);
+    font-size: var(--font__size);
+    color: var(--text__color);
+    padding: 0;
+    margin: 0
+}
+
+body.unscroll {
+    overflow: hidden;
+    padding: 0 15px 0 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+* {
+    box-sizing: border-box
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+    outline: none
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* content */
+
+
+
+/* mobile */
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+}

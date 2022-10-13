@@ -1,0 +1,76 @@
+// 
+// Theme Name: New Clean Template
+// _banner.sass
+//
+// app/sass/layout/
+//
+
+.banner
+    height: 100vh
+    background: url(../img/blockchain__banner--big.jpeg) no-repeat 50%
+    background-size: cover
+    padding: var(--header__height) 0 0 0
+    margin: calc(var(--header__height) * -1) 0 0 0
+    position: relative
+    &--alt
+        h1
+            color: #fff
+            letter-spacing: -0.04em
+        h3
+            color: #fff
+    &--overlay
+        &::after
+            content: ''
+            width: 100%
+            height: 100%
+            background: #0000004d
+            position: absolute
+            top: 0
+            left: 0
+            pointer-events: none
+    &__side
+        width: 100%
+        max-width: 680px
+        height: 100%
+        min-height: 600px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-end
+        gap: 10vh
+        padding: 0 0 10vh 0
+        margin: 0 0 0 auto
+        position: relative
+        z-index: 1
+    h1
+        font-size: 72px
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.05em
+        margin: 0
+        span
+            color: var(--blue)
+    h3
+        max-width: 420px
+        font-size: 20px
+        font-weight: 400
+        line-height: 1.3
+        letter-spacing: -0.03em
+        margin: 0
+
+@media (max-width: 768px)
+    .banner
+        &__side
+            align-items: flex-start
+            gap: 0
+            padding: 24px 0 40px 0
+        h1
+            font-size: 32px
+            margin: 0 0 200px 0
+        .btn
+            margin: 24px 0 0 0
+        &--alt
+            background-position: 50%
+            .banner
+                &__side
+                    padding: 24px 0 52px 0
